@@ -7,7 +7,7 @@ import EditBar from './EditBar';
 import Container from './Container';
 import AddWidgetDialog from './AddWidgetDialog';
 import CustomFrame from './CustomFrame';
-
+import ThemedInlineToolbarEditor from './SimpleInlineToolbarEditor';
 // Widgets of the dashboard.
 import BarChart from './widgets/BarChart';
 import LineChart from './widgets/LineChart';
@@ -124,7 +124,7 @@ class App extends Component {
         onMove={this.onMove}
         addWidgetComponentText="Add New Widget"
         />
-
+      <ThemedInlineToolbarEditor/>
     </Container>
     );
   }
