@@ -7,18 +7,18 @@ import EditBar from './EditBar';
 import Container from './Container';
 import AddWidgetDialog from './AddWidgetDialog';
 import CustomFrame from './CustomFrame';
-import ThemedInlineToolbarEditor from './SimpleInlineToolbarEditor';
 // Widgets of the dashboard.
 import BarChart from './widgets/BarChart';
 import LineChart from './widgets/LineChart';
 import DoughnutChart from './widgets/DoughnutChart';
-
+import AddImageEditor from './AddImageEditor';
+import SimpleInlineToolbarEditor from './SimpleInlineToolbarEditor';
 // We are using bootstrap as the UI library
 import 'bootstrap/dist/css/bootstrap.css';
 
 // Default styes of dazzle.
 import 'react-dazzle/lib/style/style.css';
-
+import 'draft-js-image-plugin/lib/plugin.css';
 // Our styles
 import '../styles/custom.css';
 
@@ -124,7 +124,7 @@ class App extends Component {
         onMove={this.onMove}
         addWidgetComponentText="Add New Widget"
         />
-      <ThemedInlineToolbarEditor/>
+      <AddImageEditor />
     </Container>
     );
   }

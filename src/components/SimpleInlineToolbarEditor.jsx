@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Editor, { createEditorStateWithText } from 'draft-js-plugins-editor';
 import createInlineToolbarPlugin from 'draft-js-inline-toolbar-plugin';
-import editorStyles from '../styles/editorStyles.css';
+import editorStyles from '../styles/SimpleInlineToolbarEditor.css';
 
 const inlineToolbarPlugin = createInlineToolbarPlugin();
 const { InlineToolbar } = inlineToolbarPlugin;
@@ -15,6 +15,7 @@ export default class SimpleInlineToolbarEditor extends Component {
   };
 
   onChange = (editorState) => {
+    console.log('Element changed');
     this.setState({
       editorState,
     });
